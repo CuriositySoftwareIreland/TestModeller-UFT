@@ -46,7 +46,7 @@ Before the tests are executed we have defined a function which takes all the col
 It is more efficient to perform these operations in bulk which is why they are collected into one list and then sent for allocation as opposed to directly performing the allocation inside each individual script. 
 
 ```
-res = curiosity.RetrieveAllocationResult("pool", "suite", "testname")
+Set res = curiosity.RetrieveAllocationResult("pool", "suite", "testname")
 
 Print res.GetValueByColumn("NAME")
 ```
