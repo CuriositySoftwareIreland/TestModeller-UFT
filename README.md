@@ -46,7 +46,7 @@ Before the tests are executed we have defined a function which takes all the col
 It is more efficient to perform these operations in bulk which is why they are collected into one list and then sent for allocation as opposed to directly performing the allocation inside each individual script. 
 
 ```
-Set res = curiosity.RetrieveAllocationResult("pool", "suite", "testname")
+res = curiosity.RetrieveAllocationResult("pool", "suite", "testname")
 
 Print res.GetValueByColumn("NAME")
 ```
@@ -63,7 +63,7 @@ call curiosity.AddAllocation("SplendidUAT", "Create Oppertunity", "Default Profi
 
 call curiosity.PerformAllocation()
 
-Set res = curiosity.RetrieveAllocationResult("SplendidUAT", "Create Oppertunity", "Default Profile_GoToUrl_PositiveName_PositiveAccountName_NegativeAmount_Save40:::Create Oppertunity_AccountName")
+res = curiosity.RetrieveAllocationResult("SplendidUAT", "Create Oppertunity", "Default Profile_GoToUrl_PositiveName_PositiveAccountName_NegativeAmount_Save40:::Create Oppertunity_AccountName")
 
 Print res.GetValueByColumn("NAME")
 ```
