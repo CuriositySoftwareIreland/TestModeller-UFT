@@ -63,7 +63,7 @@ call curiosity.AddAllocation("SplendidUAT", "Create Oppertunity", "Default Profi
 
 call curiosity.PerformAllocation()
 
-Set res = curiosity.RetrieveAllocationResult("SplendidUAT", "Create Oppertunity", "Default Profile_GoToUrl_PositiveName_PositiveAccountName_NegativeAmount_Save40:::Create Oppertunity_AccountName")
+res = curiosity.RetrieveAllocationResult("SplendidUAT", "Create Oppertunity", "Default Profile_GoToUrl_PositiveName_PositiveAccountName_NegativeAmount_Save40:::Create Oppertunity_AccountName")
 
 Print res.GetValueByColumn("NAME")
 ```
